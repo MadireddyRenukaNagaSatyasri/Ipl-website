@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK Fan Hub | Whistle Podu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="sc.js"></script>
+    <nav class="navbar">
+        <div class="logo">CSK <span>HUB</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#squad">Squad</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#fan-zone">Fan Zone</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Yellove Pride</h1>
+            <p>Official Fan Portal for Chennai Super Kings</p>
+            <div id="match-timer">Loading Countdown...</div>
+        </div>
+    </header>
+
+    <section class="stats-section" id="stats">
+        <h2>IPL Points Table</h2>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Team</th>
+                        <th>PLD</th>
+                        <th>WON</th>
+                        <th>PTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>1</td>
+                        <td>CSK</td>
+                        <td>14</td>
+                        <td>10</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>GT</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MI</td>
+                        <td>14</td>
+                        <td>8</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="squad" class="squad-section">
+        <h2>The Lions Den</h2>
+        <div class="filter-bar">
+            <button onclick="filterSquad('all')">All</button>
+            <button onclick="filterSquad('Batsman')">Batsmen</button>
+            <button onclick="filterSquad('All-rounder')">All-rounders</button>
+        </div>
+
+        <div class="squad-grid" id="squad-grid">
+            <div class="player-card" data-role="Batsman">
+                <div class="player-img">MSD</div>
+                <h3>MS Dhoni</h3>
+                <p>Wicketkeeper Batsman</p>
+            </div>
+            <div class="player-card" data-role="All-rounder">
+                <div class="player-img">JADDU</div>
+                <h3>Ravindra Jadeja</h3>
+                <p>All-rounder</p>
+            </div>
+            <div class="player-card" data-role="Batsman">
+                <div class="player-img">RUTU</div>
+                <h3>Ruturaj Gaikwad</h3>
+                <p>Opening Batsman</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fan-zone" class="poll-section">
+        <div class="poll-card">
+            <h3>Fan Poll: Who is your MVP?</h3>
+            <div class="poll-options">
+                <button onclick="castVote('Dhoni')">MS Dhoni</button>
+                <button onclick="castVote('Jadeja')">R. Jadeja</button>
+                <button onclick="castVote('Gaikwad')">R. Gaikwad</button>
+            </div>
+            <p id="poll-result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CSK Fan Hub. Created by Renuka MS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
